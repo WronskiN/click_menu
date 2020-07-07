@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { ThemeProvider } from "styled-components";
-import GlobalStyle from "../theme/GlobalStyle";
-import { theme } from "../theme/mainTheme";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import MainTemplate from "../templates/MainTemplate";
 // import EmailIcon from "../components/atoms/Icons/EmailIcon";
 // import email from "../assets/email.svg";
 // import Button from "../components/atoms/Button/Button";
@@ -9,6 +8,8 @@ import { theme } from "../theme/mainTheme";
 // import InputForm from "../components/atoms/InputForm/InputForm";
 // import InputTextarea from "../components/atoms/InputTextarea/InputTextarea";
 // import Card from "../components/molocules/Card/Card";
+import Navigation from "../components/organisms/Navigation/Navigation";
+
 class App extends Component {
   state = {
     card: [
@@ -33,17 +34,9 @@ class App extends Component {
   render() {
     // const card = this.state.card;
     return (
-      <div>
-        <GlobalStyle />
-        <ThemeProvider theme={theme}>
-          <>
-            <h1 className="logo">clickmenu.uk</h1>
-            {/* {card.map((card) => (
-              <Card heading={card.title} article={card.article} />
-            ))} */}
-          </>
-        </ThemeProvider>
-      </div>
+      <MainTemplate>
+        <Navigation></Navigation>
+      </MainTemplate>
     );
   }
 }
