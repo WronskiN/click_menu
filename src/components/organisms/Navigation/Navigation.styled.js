@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../../theme/mainTheme";
 
 export const Nav = styled.nav`
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -51,9 +51,6 @@ export const NavList = styled.ul`
     font-size: ${theme.fontSize.m};
     text-decoration: none;
     color: ${theme.text};
-    @media (min-width: 1440px) {
-      font-size: ${theme.fontSize.l};
-    }
   }
 
   @media (min-width: 768px) {
