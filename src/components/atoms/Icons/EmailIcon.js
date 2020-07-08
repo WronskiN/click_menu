@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import { theme } from "../../../theme/mainTheme";
 
 const EmailIcon = styled.img`
   width: 5rem;

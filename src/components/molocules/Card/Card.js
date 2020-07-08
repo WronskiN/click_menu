@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../../../theme/mainTheme";
 
 const CardWrapper = styled.div`
   width: 270px;
@@ -20,7 +19,6 @@ const CardWrapper = styled.div`
     height: 260px;
     box-shadow: 15px -10px 10px rgba(255, 255, 255, 1);
     position: absolute;
-    /* top: 0px; */
     left: -2px;
     bottom: -2px;
   }
@@ -28,12 +26,12 @@ const CardWrapper = styled.div`
 
 const CardHeading = styled.h3`
   width: 100%;
-  color: ${theme.textLighter};
-  font-size: ${theme.fontSize.xxxl};
+  color: ${({ theme }) => theme.textLighter};
+  font-size: ${({ theme }) => theme.fontSize.xxxl};
 `;
 const CardArticle = styled.article`
   width: 100%;
-  font-size: ${theme.fontSize.m};
+  font-size: ${({ theme }) => theme.fontSize.m};
 `;
 
 const Card = (props) => {

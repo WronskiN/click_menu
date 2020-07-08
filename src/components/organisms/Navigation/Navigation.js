@@ -10,11 +10,10 @@ const Navigation = () => {
   return (
     <Router>
       <Nav>
-        <Logo>clickmenu</Logo>
+        <Logo>
+          <Link to="/">clickmenu</Link>
+        </Logo>
         <NavList open={open} setOpen={setOpen}>
-          <li>
-            <Link to="/">home</Link>
-          </li>
           <li>
             <Link to="/howItWorks">how it works</Link>
           </li>
