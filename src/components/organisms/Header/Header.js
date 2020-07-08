@@ -5,8 +5,10 @@ import {
   StyledHeaderImgContainer,
   StyledHeading,
   StyledHeaderText,
+  StyledImage,
 } from "./Header.styled";
-import Image from "../../../assets/phone.jpg";
+import Button from "../../atoms/Button/Button";
+import Image from "../../../assets/phone2.jpg";
 
 const Header = () => {
   return (
@@ -14,13 +16,10 @@ const Header = () => {
       <StyledHeaderArticle>
         <StyledHeading>Online Menu for restaurants</StyledHeading>
         <StyledHeaderText>No more need to touch menu cards.</StyledHeaderText>
+        <Button>Join today</Button>
       </StyledHeaderArticle>
       <StyledHeaderImgContainer>
-        <img
-          style={{ display: "block", width: "100%", height: "auto" }}
-          src={Image}
-          alt="mobile phone"
-        />
+        <StyledImage src={Image} alt="mobile phone" />
       </StyledHeaderImgContainer>
     </StyledHeaderWrapper>
   );

@@ -29,11 +29,27 @@ export const NavList = styled.ul`
   list-style: none;
   transition: ${({ open }) => open && "transform .5s ease-in-out"};
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
     position: relative;
+  } */
+  @media (min-width: 768px) {
+    width: 70%;
+    height: 100%;
+    transform: translateY(0);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
+  @media (min-width: 1440px) {
+    width: 40%;
+    margin-right: 10rem;
   }
 
   li {
@@ -52,22 +68,9 @@ export const NavList = styled.ul`
     font-size: ${({ theme }) => theme.fontSize.m};
     text-decoration: none;
     color: ${({ theme }) => theme.text};
-  }
 
-  @media (min-width: 768px) {
-    width: 70%;
-    height: 100%;
-    transform: translateY(0);
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-  @media (min-width: 1200px) {
-    width: 50%;
-  }
-  @media (min-width: 1440px) {
-    width: 40%;
-    margin-right: 5rem;
+    @media (min-width: 1440px) {
+      font-size: ${({ theme }) => theme.fontSize.l};
+    }
   }
 `;

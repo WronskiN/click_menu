@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Logo = styled.h1`
-  font-size: ${({ theme }) => theme.fontSize.m};
+  font-size: ${({ theme }) => theme.fontSize.l};
   width: 40%;
 
   a {
