@@ -9,6 +9,7 @@ import MainTemplate from "../templates/MainTemplate";
 // import InputTextarea from "../components/atoms/InputTextarea/InputTextarea";
 // import Card from "../components/molocules/Card/Card";
 import Navigation from "../components/organisms/Navigation/Navigation";
+import Header from "../components/organisms/Header/Header";
 
 class App extends Component {
   state = {
@@ -35,7 +36,10 @@ class App extends Component {
     // const card = this.state.card;
     return (
       <MainTemplate>
-        <Navigation></Navigation>
+        <>
+          <Navigation />
+          <Header />
+        </>
       </MainTemplate>
     );
   }

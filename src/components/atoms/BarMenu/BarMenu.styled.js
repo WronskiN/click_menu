@@ -6,6 +6,7 @@ export const Hamburger = styled.button`
   padding: 0;
   border: 0;
   background-color: transparent;
+  z-index: 1001;
   cursor: pointer;
   @media (min-width: 768px) {
     display: none;

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { theme } from "../../../theme/mainTheme";
 
 export const Nav = styled.nav`
   width: 100%;
@@ -15,6 +14,8 @@ export const Nav = styled.nav`
 `;
 
 export const NavList = styled.ul`
+  background-color: ${({ theme }) => theme.primary};
+  z-index: 1000;
   width: 100%;
   height: 100vh;
   padding: 0 1rem;
@@ -48,9 +49,9 @@ export const NavList = styled.ul`
     height: 100%;
     padding: 1rem;
     display: block;
-    font-size: ${theme.fontSize.m};
+    font-size: ${({ theme }) => theme.fontSize.m};
     text-decoration: none;
-    color: ${theme.text};
+    color: ${({ theme }) => theme.text};
   }
 
   @media (min-width: 768px) {
