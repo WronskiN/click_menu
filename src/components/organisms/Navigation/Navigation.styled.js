@@ -8,6 +8,7 @@ export const Nav = styled.nav`
   align-items: center;
   padding: 0 1rem;
   position: relative;
+  box-shadow: 0 1px 0 white;
   @media (min-width: 768px) {
     padding: 0;
   }
@@ -48,8 +49,9 @@ export const NavList = styled.ul`
     width: 50%;
   }
   @media (min-width: 1440px) {
-    width: 40%;
-    margin-right: 10rem;
+    width: 50%;
+    margin-right: 5rem;
+    justify-content: space-around;
   }
 
   li {

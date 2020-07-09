@@ -71,6 +71,9 @@ export const StyledHeaderImgContainer = styled.div`
     height: 100%;
     order: 2;
   }
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
 `;
 export const StyledImage = styled.img`
   width: 50%;
@@ -81,6 +84,9 @@ export const StyledImage = styled.img`
     width: 80%;
   }
   @media (min-width: 1200px) {
-    width: 70%;
+    width: 50%;
+  }
+  @media (min-width: 1440px) {
+    width: 60%;
   }
 `;

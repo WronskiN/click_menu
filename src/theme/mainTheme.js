@@ -15,6 +15,7 @@ export const theme = {
     l: "3rem",
     xl: "4rem",
     xxl: "5rem",
+    xxll: "6rem",
     xxxl: "7rem",
   },
 };
