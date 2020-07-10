@@ -1,16 +1,18 @@
 import React from "react";
 import InputField from "./InputForm.styled";
 
-// const LabelForm = styled.input``;
-
-const InputForm = (props) => {
+const InputForm = ({ placeholder, type, name, id, label, value, onChange }) => {
   return (
     <>
-      <label htmlFor={props.id}>
+      <label htmlFor={label}>
         <InputField
-          placeholder={props.placeholder}
-          type={props.type}
-          id={props.id}
+          placeholder={placeholder}
+          type={type}
+          name={name}
+          id={id}
+          label={label}
+          value={value}
+          onChange={onChange}
         />
       </label>
     </>

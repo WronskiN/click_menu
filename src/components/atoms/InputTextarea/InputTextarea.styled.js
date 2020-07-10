@@ -6,20 +6,35 @@ export const Textarea = styled.textarea`
   border: none;
   background-color: transparent;
   padding-left: 1rem;
-  font-size: ${({ theme }) => theme.fontSize.s};
+  font-size: ${({ theme }) => theme.fontSize.m};
   border-bottom: 3px solid ${({ theme }) => theme.text};
-  :focus {
+  margin-top: 2rem;
+  @media (min-width: 768px) {
+    width: 345px;
+    height: 80px;
+    font-size: ${({ theme }) => theme.fontSize.m};
+  }
+
+  &:focus {
     outline: none;
   }
 
-  ::placeholder {
+  &::placeholder {
+    font-size: ${({ theme }) => theme.fontSize.xs};
     color: ${({ theme }) => theme.text};
     font-weight: ${({ theme }) => theme.bold};
-  }
+    font-family: "Poppins", sans-serif;
+    padding-top: 5rem;
 
-  @media (min-width: 768px) {
-    width: 345px;
-    height: 60px;
-    font-size: ${({ theme }) => theme.fontSize.m};
+    @media (min-width: 768px) {
+      padding-top: 4rem;
+      font-size: ${({ theme }) => theme.fontSize.m};
+      color: ${({ theme }) => theme.text};
+      font-weight: ${({ theme }) => theme.bold};
+      font-family: "Poppins", sans-serif;
+    }
+    @media (min-width: 1200px) {
+      font-size: ${({ theme }) => theme.fontSize.s};
+    }
   }
 `;
