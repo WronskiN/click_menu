@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MainTemplate from "../templates/MainTemplate";
 import Navigation from "../components/organisms/Navigation/Navigation";
 import Header from "../components/organisms/Header/Header";
+import Footer from "../components/organisms/Footer/Footer";
 import MenuList from "./MenuList";
 import HowItWorks from "./HowItWorks";
 import Contact from "./Contact";
@@ -25,6 +26,7 @@ class App extends Component {
             </Switch>
           </Router>
           <Contact />
+          <Footer />
         </>
       </MainTemplate>
     );
