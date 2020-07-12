@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
-const EmailIcon = styled.img`
-  width: 5rem;
-  height: 3rem;
+const Icon = styled.img`
+  width: 6rem;
+  height: 4rem;
   display: block;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    width: 7rem;
+    height: 5rem;
+  }
 
   @media (min-width: 1440px) {
     width: 8rem;
@@ -12,4 +17,4 @@ const EmailIcon = styled.img`
   }
 `;
 
-export default EmailIcon;
+export default Icon;

@@ -9,7 +9,7 @@ export const CardWrapper = styled.div`
   align-items: flex-start;
   margin: 2rem 0;
   padding: 1rem 0.5rem 1rem 1rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(255, 255, 255, 0.25);
   position: relative;
   @media (min-width: 768px) {
     margin: 2rem;

@@ -30,12 +30,6 @@ export const NavList = styled.ul`
   list-style: none;
   transition: ${({ open }) => open && "transform .5s ease-in-out"};
 
-  /* @media (min-width: 768px) {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    position: relative;
-  } */
   @media (min-width: 768px) {
     width: 70%;
     height: 100%;
