@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { bool } from "prop-types";
+import { Nav, NavList } from "./Navigation.styled";
 import BarMenu from "../../atoms/BarMenu/BarMenu";
 import Logo from "../../atoms/Logo/Logo";
-import { Nav, NavList } from "./Navigation.styled";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
@@ -23,6 +23,7 @@ const Navigation = () => {
           <Link to="/contact">contact</Link>
         </li>
       </NavList>
+
       <BarMenu open={open} setOpen={setOpen} />
     </Nav>
   );

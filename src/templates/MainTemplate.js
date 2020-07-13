@@ -4,7 +4,6 @@ import styled, { ThemeProvider } from "styled-components";
 import GlobalStyle from "../theme/GlobalStyle";
 import { theme } from "../theme/mainTheme";
 import Navigation from "../components/organisms/Navigation/Navigation";
-import Header from "../components/organisms/Header/Header";
 import Contact from "../views/Contact";
 import Footer from "../components/organisms/Footer/Footer";
 
@@ -20,7 +19,6 @@ const MainTemplate = ({ children }) => (
     <ThemeProvider theme={theme}>
       <>
         <Navigation />
-        <Header />
         {children}
         <Contact />
         <Footer />
