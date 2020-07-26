@@ -6,7 +6,7 @@ import {
   ListContainer,
   ListItem,
   ItemImage,
-} from "./MenuList.styled";
+} from "./RestaurantMenuList.styled";
 import MainTemplate from "../templates/MainTemplate";
 import Title from "../components/atoms/Title/Title";
 import InputSearch from "../components/atoms/InputSearch/InputSearch";
@@ -274,6 +274,7 @@ class MenuList extends Component {
     this.setState({
       value: value,
     });
+
     const filteredRestaurant = [...this.state.restaurant];
     console.log(filteredRestaurant);
     filteredRestaurant.filter((restaurant) =>

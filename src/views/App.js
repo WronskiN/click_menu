@@ -10,8 +10,10 @@ class App extends Component {
     return (
       <Router>
         <MainTemplate>
-          <Header />
-          <HowItWorks />
+          <>
+            <Header />
+            <HowItWorks />
+          </>
           {/* <Route path="/menuList" component={MenuList} /> */}
         </MainTemplate>
       </Router>
