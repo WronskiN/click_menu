@@ -7,7 +7,7 @@ import {
   ListItem,
   ItemImage,
 } from "./RestaurantMenuList.styled";
-import MainTemplate from "../templates/MainTemplate";
+import MenuPageTemplate from "../templates/MenuPageTemplate";
 import Title from "../components/atoms/Title/Title";
 import InputSearch from "../components/atoms/InputSearch/InputSearch";
 import Sotonweb from "../assets/restaurant/sotonweb.svg";
@@ -15,7 +15,7 @@ import mealImage from "../assets/restaurant/meal.jpg";
 import BlueIsland from "../components/pages/BlueIsland";
 import Shire from "../components/pages/Shire";
 
-class MenuList extends Component {
+class RestaurantMenuList extends Component {
   state = {
     restaurantList: "",
     value: "",
@@ -289,7 +289,7 @@ class MenuList extends Component {
   render() {
     const restaurants = this.state.restaurant;
     return (
-      <MainTemplate>
+      <MenuPageTemplate>
         <MenuListWrapper>
           <Title>menu list</Title>
           <InputContainer>
@@ -314,9 +314,9 @@ class MenuList extends Component {
             </Switch>
           </Router>
         </MenuListWrapper>
-      </MainTemplate>
+      </MenuPageTemplate>
     );
   }
 }
 
-export default MenuList;
+export default RestaurantMenuList;

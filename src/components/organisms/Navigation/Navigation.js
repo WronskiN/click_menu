@@ -14,7 +14,7 @@ const Navigation = () => {
       </Logo>
       <NavList open={open} setOpen={setOpen}>
         <li>
-          <Link to="/howItWorks">how it works</Link>
+          <Link to="/">home</Link>
         </li>
         <li>
           <Link to="/menuList">menu list</Link>
