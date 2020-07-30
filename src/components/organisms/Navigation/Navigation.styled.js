@@ -7,37 +7,41 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  position: relative;
-  box-shadow: 0 1px 0 white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: ${({ theme }) => theme.primary};
   @media (min-width: 768px) {
     padding: 0;
   }
 `;
 
 export const NavList = styled.ul`
-  background-color: ${({ theme }) => theme.primary};
-  z-index: 1000;
   width: 100%;
   height: 100vh;
   padding: 0 1rem;
   position: absolute;
   left: 0;
   transform: ${({ open }) => (open ? "translateY(45%)" : "translateY(-100%)")};
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   list-style: none;
+  background-color: ${({ theme }) => theme.primary};
   transition: ${({ open }) => open && "transform .5s ease-in-out"};
+  z-index: 1000;
 
   @media (min-width: 768px) {
     width: 70%;
     height: 100%;
-    transform: translateY(0);
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    transform: translateY(0);
   }
   @media (min-width: 1200px) {
     width: 50%;

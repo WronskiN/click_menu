@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         width: 100%;
         min-height: 100vh;
+        padding-top: 10vh;
         font-size: 1.6rem;
         font-family: 'Poppins', sans-serif;
         color: ${theme.text};

@@ -6,7 +6,7 @@ import Header from "../components/organisms/Header/Header";
 import HowItWorks from "../views/HowItWorks";
 
 const StyledWrapper = styled.div`
-  max-width: 1220px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 `;
