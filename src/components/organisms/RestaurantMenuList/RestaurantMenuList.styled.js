@@ -1,8 +1,21 @@
 import styled from "styled-components";
 
+export const SearchListStatus = styled.h3`
+  width: 100%;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: ${({ theme }) => theme.fontSize.s};
+
+  @media (min-width: 768px) {
+    font-size: ${({ theme }) => theme.fontSize.m};
+  }
+`;
+
 export const MenuListWrapper = styled.div`
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -47,6 +60,6 @@ export const ListItem = styled.li`
 
 export const ItemImage = styled.img`
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
 `;

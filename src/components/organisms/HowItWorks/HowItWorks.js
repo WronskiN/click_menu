@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { HowItWorksWrapper, CardWrapper } from "./HowItWorks.styled";
-import Title from "../components/atoms/Title/Title";
-import Paragraph from "../components/atoms/Paragraph/Paragraph";
-import Card from "../components/molocules/Card/Card";
+import Title from "../../atoms/Title/Title";
+import Card from "../../molocules/Card/Card";
+import Paragraph from "../../atoms/Paragraph/Paragraph";
 
 class HowItWorks extends Component {
   state = {

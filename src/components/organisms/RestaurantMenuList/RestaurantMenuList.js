@@ -6,14 +6,15 @@ import {
   ListContainer,
   ListItem,
   ItemImage,
+  SearchListStatus,
 } from "./RestaurantMenuList.styled";
-import MenuPageTemplate from "../templates/MenuPageTemplate";
-import Title from "../components/atoms/Title/Title";
-import InputSearch from "../components/atoms/InputSearch/InputSearch";
-import Sotonweb from "../assets/restaurant/sotonweb.svg";
-import mealImage from "../assets/restaurant/meal.jpg";
-import BlueIsland from "../components/pages/BlueIsland";
-import Shire from "../components/pages/Shire";
+import MenuPageTemplate from "../../../templates/MenuPageTemplate";
+import Title from "../../atoms/Title/Title";
+import InputSearch from "../../atoms/InputSearch/InputSearch";
+import Sotonweb from "../../../assets/restaurant/sotonweb.svg";
+import mealImage from "../../../assets/restaurant/meal.jpg";
+import BlueIsland from "../../pages/BlueIsland";
+import Shire from "../../pages/Shire";
 
 const RestaurantList = [
   {
@@ -330,6 +331,12 @@ class RestaurantMenuList extends Component {
                 </ListItem>
               ))}
             </ListContainer>
+            {restaurants.length === 0 && (
+              <SearchListStatus>
+                Your restaurant is not here yet. Please let us know if you like
+                to see your restaurant menu on our page.
+              </SearchListStatus>
+            )}
             <Switch>
               <Route path="/blueIsland" component={BlueIsland} />
               <Route path="/shire" component={Shire} />

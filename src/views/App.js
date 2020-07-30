@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MainTemplate from "../templates/MainTemplate";
-import RestaurantMenuList from "./RestaurantMenuList";
+import RestaurantMenuList from "../components/organisms/RestaurantMenuList/RestaurantMenuList";
 import Home from "./Home";
 
 class App extends Component {
