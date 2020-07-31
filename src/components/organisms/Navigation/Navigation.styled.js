@@ -11,6 +11,7 @@ export const Nav = styled.nav`
   top: 0;
   left: 0;
   background-color: ${({ theme }) => theme.primary};
+  box-shadow: 0 2px 0 white;
   @media (min-width: 768px) {
     padding: 0;
   }
@@ -72,5 +73,8 @@ export const NavList = styled.ul`
     @media (min-width: 1440px) {
       font-size: ${({ theme }) => theme.fontSize.l};
     }
+  }
+  li a.active {
+    color: ${({ theme }) => theme.buttonText};
   }
 `;
