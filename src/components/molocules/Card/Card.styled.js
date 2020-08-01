@@ -26,7 +26,7 @@ export const CardWrapper = styled.div`
     position: absolute;
     left: -2px;
     bottom: -2px;
-    box-shadow: 15px -10px 10px rgba(255, 255, 255, 1);
+    box-shadow: 5px -5px 5px rgba(255, 255, 255, 1);
 
     @media (min-width: 1200px) {
       width: 300px;
