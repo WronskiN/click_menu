@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import {
   MenuListWrapper,
   InputContainer,
@@ -13,14 +13,15 @@ import Title from "../../atoms/Title/Title";
 import InputSearch from "../../atoms/InputSearch/InputSearch";
 import Sotonweb from "../../../assets/restaurant/sotonweb.svg";
 import mealImage from "../../../assets/restaurant/meal.jpg";
-import BlueIsland from "../../pages/BlueIsland";
-import Shire from "../../pages/Shire";
+import RestaurantPage from "../../pages/RestaurantPage";
+// import BlueIsland from "../../pages/BlueIsland";
+// import Shire from "../../pages/Shire";
 
 const RestaurantList = [
   {
     name: "Blue Island",
-    title: "Blue Island Greek Taverna",
-    linkName: "BlueIsland",
+    title: "Blue Island Greek Restaurant",
+    linkName: "BlueIslandGreekRestaurant",
     logoImage: `${Sotonweb}`,
     address: {
       city: "Southampton",
@@ -393,7 +394,7 @@ const RestaurantList = [
           price: "£20 per person",
         },
       },
-      salads: {
+      sweets: {
         title: "Sweets",
         dishes: [
           {
@@ -794,7 +795,7 @@ class RestaurantMenuList extends Component {
             <ListContainer>
               {restaurants.map((restaurants) => (
                 <ListItem key={restaurants.name}>
-                  <Link to={`/${restaurants.linkName}`}>
+                  <Link to={`/menuList/${restaurants.linkName}`}>
                     <ItemImage src={restaurants.logoImage} />
                   </Link>
                 </ListItem>
@@ -807,8 +808,8 @@ class RestaurantMenuList extends Component {
               </SearchListStatus>
             )}
             <Switch>
-              <Route path="/blueIsland" component={BlueIsland} />
-              <Route path="/shire" component={Shire} />
+              <Route path="/menuList/:id" component={RestaurantPage} />
+              <Route path="/menuList/:id" component={RestaurantPage} />
             </Switch>
           </Router>
         </MenuListWrapper>
