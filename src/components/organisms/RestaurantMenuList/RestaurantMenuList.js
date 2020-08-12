@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   MenuListWrapper,
   InputContainer,
@@ -13,9 +13,6 @@ import Title from "../../atoms/Title/Title";
 import InputSearch from "../../atoms/InputSearch/InputSearch";
 import Sotonweb from "../../../assets/restaurant/sotonweb.svg";
 import mealImage from "../../../assets/restaurant/meal.jpg";
-import RestaurantPage from "../../pages/RestaurantPage";
-// import BlueIsland from "../../pages/BlueIsland";
-// import Shire from "../../pages/Shire";
 
 const RestaurantList = [
   {
@@ -791,27 +788,21 @@ class RestaurantMenuList extends Component {
               onChange={this.handleChange}
             />
           </InputContainer>
-          <Router>
-            <ListContainer>
-              {restaurants.map((restaurants) => (
-                <ListItem key={restaurants.name}>
-                  <Link to={`/menuList/${restaurants.linkName}`}>
-                    <ItemImage src={restaurants.logoImage} />
-                  </Link>
-                </ListItem>
-              ))}
-            </ListContainer>
-            {restaurants.length === 0 && (
-              <SearchListStatus>
-                Your restaurant is not here yet. Please let us know if you like
-                to see your restaurant menu on our page.
-              </SearchListStatus>
-            )}
-            <Switch>
-              <Route path="/menuList/:id" component={RestaurantPage} />
-              <Route path="/menuList/:id" component={RestaurantPage} />
-            </Switch>
-          </Router>
+          <ListContainer>
+            {restaurants.map((restaurants) => (
+              <ListItem key={restaurants.name}>
+                <Link to={`/menuList/${restaurants.linkName}`}>
+                  <ItemImage src={restaurants.logoImage} />
+                </Link>
+              </ListItem>
+            ))}
+          </ListContainer>
+          {restaurants.length === 0 && (
+            <SearchListStatus>
+              Your restaurant is not here yet. Please let us know if you like to
+              see your restaurant menu on our page.
+            </SearchListStatus>
+          )}
         </MenuListWrapper>
       </MenuPageTemplate>
     );

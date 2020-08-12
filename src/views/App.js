@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import MainTemplate from "../templates/MainTemplate";
 import RestaurantMenuList from "../components/organisms/RestaurantMenuList/RestaurantMenuList";
 import Home from "./Home";
+import RestaurantPage from "../components/pages/RestaurantPage";
 
 class App extends Component {
   render() {
@@ -11,7 +12,8 @@ class App extends Component {
         <MainTemplate>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/menuList" component={RestaurantMenuList} />
+            <Route exact path="/menuList" component={RestaurantMenuList} />
+            <Route path="/menuList/:id" component={RestaurantPage} />
           </Switch>
         </MainTemplate>
       </Router>
