@@ -12,6 +12,7 @@ import MenuPageTemplate from "../../../templates/MenuPageTemplate";
 import Title from "../../atoms/Title/Title";
 import InputSearch from "../../atoms/InputSearch/InputSearch";
 import Sotonweb from "../../../assets/restaurant/sotonweb.svg";
+import BlueIsland from "../../../assets/restaurant/blueIsland/blueIsland.jpg";
 import mealImage from "../../../assets/restaurant/meal.jpg";
 
 const RestaurantList = [
@@ -19,7 +20,7 @@ const RestaurantList = [
     name: "Blue Island",
     title: "Blue Island Greek Restaurant",
     linkName: "BlueIslandGreekRestaurant",
-    logoImage: `${Sotonweb}`,
+    logoImage: `${BlueIsland}`,
     address: {
       city: "Southampton",
       street: "Above Bart Street",
