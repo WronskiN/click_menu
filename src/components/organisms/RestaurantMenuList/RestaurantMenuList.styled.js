@@ -5,7 +5,7 @@ export const SearchListStatus = styled.h3`
   padding: 0 30px;
   letter-spacing: 1px;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
   font-size: ${({ theme }) => theme.fontSize.s};
 
   @media (min-width: 768px) {

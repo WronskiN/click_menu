@@ -788,6 +788,12 @@ class RestaurantMenuList extends Component {
               onChange={this.handleChange}
             />
           </InputContainer>
+          {restaurants.length === 0 && (
+            <SearchListStatus>
+              Your restaurant is not here yet. Please let us know if you like to
+              see your restaurant menu on our page.
+            </SearchListStatus>
+          )}
           <ListContainer>
             {restaurants.map((restaurants) => (
               <ListItem key={restaurants.name}>
@@ -797,12 +803,6 @@ class RestaurantMenuList extends Component {
               </ListItem>
             ))}
           </ListContainer>
-          {restaurants.length === 0 && (
-            <SearchListStatus>
-              Your restaurant is not here yet. Please let us know if you like to
-              see your restaurant menu on our page.
-            </SearchListStatus>
-          )}
         </MenuListWrapper>
       </MenuPageTemplate>
     );
