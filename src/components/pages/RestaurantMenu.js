@@ -1,7 +1,7 @@
 import React from "react";
 
 const RestaurantMenu = (props) => {
-  return <div>{props.id}</div>;
+  return <h2>{props.id}</h2>;
 };
 
 export default RestaurantMenu;
