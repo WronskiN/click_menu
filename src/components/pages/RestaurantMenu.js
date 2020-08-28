@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const RestaurantMenu = (props) => {
-  return <h2>{props.id}</h2>;
+  return <Fragment>{props.id}</Fragment>;
 };
 
 export default RestaurantMenu;

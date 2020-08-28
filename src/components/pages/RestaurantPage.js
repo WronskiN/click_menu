@@ -6,6 +6,7 @@ const RestaurantPage = ({ match }) => {
 
   return (
     <>
+      <div>tytul strony</div>
       <RestaurantMenu id={match.params.id} />
     </>
   );
