@@ -796,10 +796,10 @@ class RestaurantMenuList extends Component {
             </SearchListStatus>
           )}
           <ListContainer>
-            {restaurants.map((restaurants) => (
-              <ListItem key={restaurants.name}>
-                <Link to={`/menuList/${restaurants.linkName}`}>
-                  <ItemImage src={restaurants.logoImage} />
+            {restaurants.map((restaurant) => (
+              <ListItem key={restaurant.name} restaurant={restaurant}>
+                <Link to={`/menuList/${restaurant.linkName}`}>
+                  <ItemImage src={restaurant.logoImage} />
                 </Link>
               </ListItem>
             ))}
