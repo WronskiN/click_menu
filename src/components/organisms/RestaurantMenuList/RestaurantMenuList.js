@@ -579,15 +579,15 @@ const RestaurantList = [
     menu: {
       starters: {
         meal1: {
-          name: "King prowns in garlic souce",
+          name: "King prawns in garlic sauce",
           image: `${mealImage}`,
           ingridients: [
-            "king prowns",
+            "king prawns",
             "garlic",
             "parsley",
             "olive oil",
             "salt",
-            "black papper",
+            "black pepper",
           ],
           type: "meat",
           portion: "200g",
@@ -604,7 +604,7 @@ const RestaurantList = [
             "parsley",
             "olive oil",
             "salt",
-            "black papper",
+            "black pepper",
           ],
           type: "veg",
           portion: "200g",
@@ -623,7 +623,7 @@ const RestaurantList = [
             "parsley",
             "olive oil",
             "salt",
-            "black papper",
+            "black pepper",
           ],
           type: "meat",
           portion: "400g",
@@ -639,7 +639,7 @@ const RestaurantList = [
             "parsley",
             "olive oil",
             "salt",
-            "black papper",
+            "black pepper",
             "ice salad",
           ],
           type: "veg",
@@ -661,15 +661,15 @@ const RestaurantList = [
     menu: {
       starters: {
         meal1: {
-          name: "King prowns in garlic souce",
+          name: "King prawns in garlic sauce",
           image: `${mealImage}`,
           ingridients: [
-            "king prowns",
+            "king prawns",
             "garlic",
             "parsley",
             "olive oil",
             "salt",
-            "black papper",
+            "black pepper",
           ],
           type: "meat",
           portion: "200g",
