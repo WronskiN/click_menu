@@ -721,12 +721,14 @@ const restaurant = [
 ];
 
 const RestaurantPage = ({ match }) => {
-  console.log(match);
+  // console.log(match);
+  let name = match.params.id;
+  let currentRestaurant = restaurant.filter((rest) => rest.linkName === name);
+  // console.log(currentRestaurant);
 
   return (
     <>
-      <div>tytul strony</div>
-      <RestaurantMenu id={match.params.id} restaurant={restaurant} />
+      <RestaurantMenu id={match.params.id} restaurant={currentRestaurant} />
     </>
   );
 };
