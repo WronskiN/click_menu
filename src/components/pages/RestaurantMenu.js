@@ -19,15 +19,14 @@ import {
 } from "../molocules/MenuItem/MenuItem.styled";
 
 const RestaurantMenu = ({ restaurant, ...props }) => {
-  // const name = props.id;
-  // console.log(name);
-  // let currentRestaurant = restaurant.filter((rest) => rest.linkName === name);
-  // console.log(restaurant);
+  const name = props.id;
+  let currentRestaurant = restaurant.filter((rest) => rest.linkName === name);
+  console.log(currentRestaurant);
 
   return (
     <MenuPageTemplate>
       <MenuItem>
-        {restaurant.map((item) => (
+        {currentRestaurant.map((item) => (
           <MenuWrapper key={item.linkName}>
             <Title>{item.name}</Title>
             <MealAddress>
@@ -195,14 +194,12 @@ const RestaurantMenu = ({ restaurant, ...props }) => {
               item.menu.drinks.map((name) => (
                 <MenuContainer key={name.title}>
                   <MealTitle>{name.title}</MealTitle>
-                  {/* {console.log(name)} */}
                   {name.avaibality && (
                     <MealAvaibality>{name.avaibality}</MealAvaibality>
                   )}
                   {name.drinks.map((drink) => (
                     <Fragment key={drink.title}>
                       <SelectionTitle>{drink.title}</SelectionTitle>
-                      {console.log(drink)}
                       {drink.list.map((el) => (
                         <MealBox key={el.name}>
                           <MealNameBox>

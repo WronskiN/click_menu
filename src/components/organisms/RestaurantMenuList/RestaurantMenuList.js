@@ -24,13 +24,13 @@ const RestaurantList = [
   {
     name: "Shire1",
     title: "Shire 1",
-    linkName: "Shire1Restaurant1",
+    linkName: "Shire1",
     logoImage: `${Sotonweb}`,
   },
   {
     name: "Shire2",
     title: "Shire 2",
-    linkName: "Shire1Restaurant2",
+    linkName: "Shire1",
     logoImage: `${Sotonweb}`,
   },
 ];

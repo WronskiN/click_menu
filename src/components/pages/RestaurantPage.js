@@ -660,9 +660,9 @@ const restaurant = [
     ],
   },
   {
-    name: "Shire1",
-    title: "Shire 1",
-    linkName: "Shire1Restaurant1",
+    name: "Shire One",
+    title: "Shire One",
+    linkName: "Shire1",
     logoImage: "",
     address: {
       city: "Southampton, ",
@@ -713,7 +713,7 @@ const restaurant = [
             {
               name: "Egg, Three Bacon, Bread & Tea or Coffee",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Egg, Three Bacon, Bread",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -722,7 +722,7 @@ const restaurant = [
             {
               name: "Egg, Three Bacon, Beans, Tomatoes, Bread & Tea or Coffee",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Egg, Three Bacon, Beans, Tomatoes, Bread",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -731,7 +731,7 @@ const restaurant = [
             {
               name: "Bacon or Sausage Sandwich",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Bacon or Sausage, bread",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -741,7 +741,8 @@ const restaurant = [
               name:
                 "Egg, Three bacon, Beans, Tomatoes, Bread, Sausage, Hash Brown & Tea or Coffee",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients:
+                "Egg, Three bacon, Beans, Tomatoes, Bread, Sausage, Hash Brown",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -750,7 +751,7 @@ const restaurant = [
             {
               name: "Two toasts with Egg and Mushrooms",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Egg, Mushroom and Bread",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -759,7 +760,7 @@ const restaurant = [
             {
               name: "Two toasts with Beans and Bacon",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Beans, Bacon and Bread",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -768,7 +769,7 @@ const restaurant = [
             {
               name: "Bacon OR Sausage Sandwich",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Bacon OR Sausage, bread",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -777,7 +778,7 @@ const restaurant = [
             {
               name: "Two toasts with Beans, Mushrooms and Two Bacons",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Beans, Mushrooms and Bacon",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -786,24 +787,14 @@ const restaurant = [
           ],
         },
       ],
-      starters: {
-        title: "Starters",
-        cold: {
-          title: "cold starters",
+      starters: [
+        {
+          title: "Starters",
           dishes: [
             {
               name: "houmous",
               ingridients:
                 "mixture of chickpeas, sesame pulp, olive oil and garlic.",
-              price: "£5.90",
-              vegetarian: true,
-              vegIcon: `${vegIcon}`,
-              meatIcon: `${meatIcon}`,
-            },
-            {
-              name: "tzatziki",
-              ingridients:
-                "mixture of thick yogurt, cool cucumber, dried mint and garlic.",
               price: "£5.90",
               vegetarian: true,
               vegIcon: `${vegIcon}`,
@@ -827,11 +818,6 @@ const restaurant = [
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
             },
-          ],
-        },
-        warm: {
-          title: "warm starters",
-          dishes: [
             {
               name: "grilled halloumi & lounza",
               ingridients: "cypriot cheese and smoked fillet or pork.",
@@ -896,391 +882,414 @@ const restaurant = [
             },
           ],
         },
-      },
-      salads: {
-        title: "Shef's special fresh salads",
-        dishes: [
-          {
-            name: "greek salad",
-            ingridients:
-              "mixed green salad with tomatoes, cucumber, feta cheese, onions, olives and olive oil",
-            price: "£9.50",
-            vegetarian: true,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "grilled lounza & halloumi salad",
-            ingridients:
-              "grilled lounza & halloumi, mixed green salad, tomatoes, cucumber, olives and olive oil",
-            price: "£9.50",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-        ],
-      },
-      mainCourse: {
-        title: "Main Courses",
-        dishes: [
-          {
-            name: "pork souvlaki *",
-            image: `${mealImage}`,
-            ingridients: "pork cubes charcoal grilled to tender perfection.",
-            price: "£12.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "chicken souvlaki *",
-            image: `${mealImage}`,
-            ingridients:
-              "charcoal grilled cubes of chicken, marinated in herbs.",
-            price: "£12.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "blue island chicken souvlaki *",
-            image: `${mealImage}`,
-            ingridients:
-              "pieces of chicken, charcoal grilled to tender perfection.",
-            price: "£13.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "mixed souvlaki *",
-            image: `${mealImage}`,
-            ingridients:
-              "cubes of pork and chicken souvla, charcoal grilled to tender perfection.",
-            price: "£14.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "mousakka *",
-            image: `${mealImage}`,
-            ingridients:
-              "layers of aubergine, potatoes and mince with cheese topping.",
-            price: "£12.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "kleftiko *",
-            image: `${mealImage}`,
-            ingridients: "lamb covered in foil and slowly cooked in oven.",
-            price: "£16.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "dolmades *",
-            image: `${mealImage}`,
-            ingridients:
-              "stuffed vine leaves with pork mince, rice, tomatoes, onions, parsley and mint",
-            price: "£12.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "meat balls",
-            image: `${mealImage}`,
-            ingridients:
-              "lightly spiced meatballs in tomato and pepper sauce. Served with rice and Greek salad.",
-            price: "£11.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "stifado",
-            image: `${mealImage}`,
-            ingridients:
-              "cubes of beef slowly cooked with onions, tomatoes, red wine and herbs served with rice.",
-            vegetarian: false,
-            price: "£16.00",
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-        ],
-      },
-      lunch: {
-        title: "Lunch time menu",
-        avaibality: "Available Monday - Saturday, from 11:30 to 15:00",
-        dishes: [
-          {
-            title: "panini",
-            info: "toasted panini sandwiches. All served with chips",
-            meals: [
-              {
-                name: "chicken",
-                vegetarian: false,
-                price: "£7.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "cheese & ham",
-                vegetarian: false,
-                price: "£6.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "lounza & halloumi",
-                vegetarian: false,
-                price: "£7.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-            ],
-          },
-          {
-            title: "omelettes",
-            info: "All served with chips & salad",
-            meals: [
-              {
-                name: "mushrooms",
-                vegetarian: true,
-                price: "£8.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "chicken",
-                vegetarian: false,
-                price: "£9.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "ham",
-                vegetarian: false,
-                price: "£8.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "cheese",
-                vegetarian: true,
-                price: "£8.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "spanish",
-                vegetarian: false,
-                price: "£10.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-            ],
-          },
-          {
-            title: "grills",
-            grillsInfo: "All served with chips & salad",
-            meals: [
-              {
-                name: "Pork Chop",
-                vegetarian: false,
-                price: "£8.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "Chicken Mediterranean",
-                vegetarian: false,
-                price: "£9.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "Grilled fresh chicken",
-                vegetarian: false,
-                price: "£8.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-            ],
-          },
-        ],
-      },
-      specialOffer: {
-        title: "Special Offer",
-        dishes: {
-          name: "blue island special meze",
-          info:
-            "Served to a minimum of two people. Traditional speciality of approximately twelve to fifteen traditional greek cold and hot dishes",
-          price: "£20 per person",
-        },
-      },
-      sweets: {
-        title: "Sweets",
-        dishes: [
-          {
-            name: "ice cream",
-            ingridients: "vanilla and chocolate",
-            price: "£6.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "chocolate pudding",
-            price: "£7.90",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "homemade baklava",
-            price: "£6.90",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-        ],
-      },
-      drinks: {
-        title: "drinks menu",
-        drinks: [
-          {
-            title: "red wine",
-            drink: [
-              {
-                name: "merlot",
-                info:
-                  "It has a full bodied taste with slightly bitter aftertaste. this wine generally accompanies mail courses. 12% vol.",
-                price: "£16",
-              },
-              {
-                name: "cabernet",
-                info:
-                  "Dry, full boodied wine with a flavour of herbs. Ideal for both red and white meat. 12vol.",
-                price: "£15",
-              },
-            ],
-          },
-          {
-            title: "rose wine",
-            drink: {
-              name: "rose",
-              info:
-                "Fresh and slightly fruity perfume whilst the flavour is dry and light. 12% vol.",
-              price: "£16",
+      ],
+
+      salads: [
+        {
+          title: "Shef's special fresh salads",
+          dishes: [
+            {
+              name: "greek salad",
+              ingridients:
+                "mixed green salad with tomatoes, cucumber, feta cheese, onions, olives and olive oil",
+              price: "£9.50",
+              vegetarian: true,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
             },
+            {
+              name: "grilled lounza & halloumi salad",
+              ingridients:
+                "grilled lounza & halloumi, mixed green salad, tomatoes, cucumber, olives and olive oil",
+              price: "£9.50",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+          ],
+        },
+      ],
+      mainCourse: [
+        {
+          title: "Main Courses",
+          dishes: [
+            {
+              name: "pork souvlaki *",
+              image: `${mealImage}`,
+              ingridients: "pork cubes charcoal grilled to tender perfection.",
+              price: "£12.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "chicken souvlaki *",
+              image: `${mealImage}`,
+              ingridients:
+                "charcoal grilled cubes of chicken, marinated in herbs.",
+              price: "£12.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "blue island chicken souvlaki *",
+              image: `${mealImage}`,
+              ingridients:
+                "pieces of chicken, charcoal grilled to tender perfection.",
+              price: "£13.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "mixed souvlaki *",
+              image: `${mealImage}`,
+              ingridients:
+                "cubes of pork and chicken souvla, charcoal grilled to tender perfection.",
+              price: "£14.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "mousakka *",
+              image: `${mealImage}`,
+              ingridients:
+                "layers of aubergine, potatoes and mince with cheese topping.",
+              price: "£12.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "kleftiko *",
+              image: `${mealImage}`,
+              ingridients: "lamb covered in foil and slowly cooked in oven.",
+              price: "£16.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "dolmades *",
+              image: `${mealImage}`,
+              ingridients:
+                "stuffed vine leaves with pork mince, rice, tomatoes, onions, parsley and mint",
+              price: "£12.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "meat balls",
+              image: `${mealImage}`,
+              ingridients:
+                "lightly spiced meatballs in tomato and pepper sauce. Served with rice and Greek salad.",
+              price: "£11.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "stifado",
+              image: `${mealImage}`,
+              ingridients:
+                "cubes of beef slowly cooked with onions, tomatoes, red wine and herbs served with rice.",
+              vegetarian: false,
+              price: "£16.00",
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+          ],
+        },
+      ],
+      lunch: [
+        {
+          title: "Lunch",
+          avaibality: "Available Monday - Saturday, from 11:30 to 15:00",
+          dishes: [
+            {
+              title: "panini",
+              meals: [
+                {
+                  name: "chicken",
+                  vegetarian: false,
+                  price: "£7.90",
+                  info: "Toasted panini sandwiches. Served with chips",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "cheese & ham",
+                  vegetarian: false,
+                  price: "£6.90",
+                  info: "Toasted panini sandwiches. Served with chips",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "lounza & halloumi",
+                  vegetarian: false,
+                  price: "£7.90",
+                  info: "Toasted panini sandwiches. Served with chips",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+              ],
+            },
+            {
+              title: "omelettes",
+              meals: [
+                {
+                  name: "mushrooms",
+                  vegetarian: true,
+                  price: "£8.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "chicken",
+                  vegetarian: false,
+                  price: "£9.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "ham",
+                  vegetarian: false,
+                  price: "£8.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "cheese",
+                  vegetarian: true,
+                  price: "£8.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "spanish",
+                  vegetarian: false,
+                  price: "£10.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+              ],
+            },
+            {
+              title: "grills",
+              meals: [
+                {
+                  name: "Pork Chop",
+                  vegetarian: false,
+                  price: "£8.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "Chicken Mediterranean",
+                  vegetarian: false,
+                  price: "£9.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "Grilled fresh chicken",
+                  vegetarian: false,
+                  price: "£8.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      specialOffer: [
+        {
+          title: "Special Offer",
+          dishes: {
+            name: "blue island special meze",
+            info:
+              "Served to a minimum of two people. Traditional speciality of approximately twelve to fifteen traditional greek cold and hot dishes",
+            price: "£20 per person",
           },
-          {
-            title: "white wine",
-            drink: [
-              {
-                name: "pinot grigio",
-                info:
-                  "Dry, relatively rounded and pleasent, well balanced in acidity. 12% vol.",
-                price: "£16",
-              },
-              {
-                name: "chardonnay",
-                info:
-                  "A ripe fruity wine, carefully matched with well-ballanced oak. Soft and buttery with peach fruit flavours. 12% vol.",
-                price: "£16",
-              },
-            ],
-          },
-          {
-            title: "spirits (25 ml)",
-            drink: [
-              {
-                name: "Vodka / Whisky / Brandy / Tequila / Ouzo",
-                price: "£4.00",
-              },
-              {
-                name: "Spirits with soft drinks",
-                price: "£4.50",
-              },
-              {
-                name: "Gin and Tonic",
-                price: "£4.50",
-              },
-              {
-                name: "Bottled beer",
-                price: "£4.50",
-              },
-              {
-                name: "Wine by glass (175ml)",
-                price: "£4.50",
-              },
-            ],
-          },
-          {
-            title: "soft drinks",
-            drink: [
-              {
-                name: "Coke",
-                price: "£3.00",
-              },
-              {
-                name: "Lemonade",
-                price: "£3.00",
-              },
-              {
-                name: "Orange juice",
-                price: "£3.50",
-              },
-              {
-                name: "Apple juice",
-                price: "£3.50",
-              },
-              {
-                name: "Cranberry juice",
-                price: "£3.50",
-              },
-            ],
-          },
-          {
-            title: "hot drinks",
-            drink: [
-              {
-                name: "Cafe Creme (black)",
-                price: "£3.00",
-              },
-              {
-                name: "Americano (black)",
-                price: "£3.00",
-              },
-              {
-                name: "Espresso",
-                price: "£2.00",
-              },
-              {
-                name: "Capuccino",
-                price: "£3.00",
-              },
-              {
-                name: "Cafe au Lait",
-                price: "£3.00",
-              },
-              {
-                name: "Greek Coffee",
-                price: "£3.00",
-              },
-              {
-                name: "Tea",
-                price: "£1.00",
-              },
-            ],
-          },
-        ],
-      },
+        },
+      ],
+      sweets: [
+        {
+          title: "Sweets",
+          dishes: [
+            {
+              name: "ice cream",
+              ingridients: "vanilla and chocolate",
+              price: "£6.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "chocolate pudding",
+              price: "£7.90",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "homemade baklava",
+              price: "£6.90",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+          ],
+        },
+      ],
+      drinks: [
+        {
+          title: "Drinks menu",
+          drinks: [
+            {
+              title: "red wine",
+              list: [
+                {
+                  name: "merlot",
+                  info:
+                    "It has a full bodied taste with slightly bitter aftertaste. this wine generally accompanies mail courses. 12% vol.",
+                  price: "£16",
+                },
+                {
+                  name: "cabernet",
+                  info:
+                    "Dry, full boodied wine with a flavour of herbs. Ideal for both red and white meat. 12vol.",
+                  price: "£15",
+                },
+              ],
+            },
+            {
+              title: "rose wine",
+              list: [
+                {
+                  name: "rose",
+                  info:
+                    "Fresh and slightly fruity perfume whilst the flavour is dry and light. 12% vol.",
+                  price: "£16",
+                },
+              ],
+            },
+            {
+              title: "white wine",
+              list: [
+                {
+                  name: "pinot grigio",
+                  info:
+                    "Dry, relatively rounded and pleasent, well balanced in acidity. 12% vol.",
+                  price: "£16",
+                },
+                {
+                  name: "chardonnay",
+                  info:
+                    "A ripe fruity wine, carefully matched with well-ballanced oak. Soft and buttery with peach fruit flavours. 12% vol.",
+                  price: "£16",
+                },
+              ],
+            },
+            {
+              title: "spirits (25 ml)",
+              list: [
+                {
+                  name: "Vodka / Whisky / Brandy / Tequila / Ouzo",
+                  price: "£4.00",
+                },
+                {
+                  name: "Spirits with soft drinks",
+                  price: "£4.50",
+                },
+                {
+                  name: "Gin and Tonic",
+                  price: "£4.50",
+                },
+                {
+                  name: "Bottled beer",
+                  price: "£4.50",
+                },
+                {
+                  name: "Wine by glass (175ml)",
+                  price: "£4.50",
+                },
+              ],
+            },
+            {
+              title: "soft drinks",
+              list: [
+                {
+                  name: "Coke",
+                  price: "£3.00",
+                },
+                {
+                  name: "Lemonade",
+                  price: "£3.00",
+                },
+                {
+                  name: "Orange juice",
+                  price: "£3.50",
+                },
+                {
+                  name: "Apple juice",
+                  price: "£3.50",
+                },
+                {
+                  name: "Cranberry juice",
+                  price: "£3.50",
+                },
+              ],
+            },
+            {
+              title: "hot drinks",
+              list: [
+                {
+                  name: "Cafe Creme (black)",
+                  price: "£3.00",
+                },
+                {
+                  name: "Americano (black)",
+                  price: "£3.00",
+                },
+                {
+                  name: "Espresso",
+                  price: "£2.00",
+                },
+                {
+                  name: "Capuccino",
+                  price: "£3.00",
+                },
+                {
+                  name: "Cafe au Lait",
+                  price: "£3.00",
+                },
+                {
+                  name: "Greek Coffee",
+                  price: "£3.00",
+                },
+                {
+                  name: "Tea",
+                  price: "£1.00",
+                },
+              ],
+            },
+          ],
+        },
+      ],
     },
 
     allergenInfo:
@@ -1305,9 +1314,9 @@ const restaurant = [
     ],
   },
   {
-    name: "Shire2",
-    title: "Shire 2",
-    linkName: "Shire1Restaurant2",
+    name: "Shire Two",
+    title: "Shire Two",
+    linkName: "Shire2",
     logoImage: "",
     address: {
       city: "Southampton, ",
@@ -1358,7 +1367,7 @@ const restaurant = [
             {
               name: "Egg, Three Bacon, Bread & Tea or Coffee",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Egg, Three Bacon, Bread",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -1367,7 +1376,7 @@ const restaurant = [
             {
               name: "Egg, Three Bacon, Beans, Tomatoes, Bread & Tea or Coffee",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Egg, Three Bacon, Beans, Tomatoes, Bread",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -1376,7 +1385,7 @@ const restaurant = [
             {
               name: "Bacon or Sausage Sandwich",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Bacon or Sausage, bread",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -1386,7 +1395,8 @@ const restaurant = [
               name:
                 "Egg, Three bacon, Beans, Tomatoes, Bread, Sausage, Hash Brown & Tea or Coffee",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients:
+                "Egg, Three bacon, Beans, Tomatoes, Bread, Sausage, Hash Brown",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -1395,7 +1405,7 @@ const restaurant = [
             {
               name: "Two toasts with Egg and Mushrooms",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Egg, Mushroom and Bread",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -1404,7 +1414,7 @@ const restaurant = [
             {
               name: "Two toasts with Beans and Bacon",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Beans, Bacon and Bread",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -1413,7 +1423,7 @@ const restaurant = [
             {
               name: "Bacon OR Sausage Sandwich",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Bacon OR Sausage, bread",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -1422,7 +1432,7 @@ const restaurant = [
             {
               name: "Two toasts with Beans, Mushrooms and Two Bacons",
               image: `${mealImage}`,
-              ingridients: "",
+              ingridients: "Beans, Mushrooms and Bacon",
               vegetarian: false,
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
@@ -1431,24 +1441,14 @@ const restaurant = [
           ],
         },
       ],
-      starters: {
-        title: "Starters",
-        cold: {
-          title: "cold starters",
+      starters: [
+        {
+          title: "Starters",
           dishes: [
             {
               name: "houmous",
               ingridients:
                 "mixture of chickpeas, sesame pulp, olive oil and garlic.",
-              price: "£5.90",
-              vegetarian: true,
-              vegIcon: `${vegIcon}`,
-              meatIcon: `${meatIcon}`,
-            },
-            {
-              name: "tzatziki",
-              ingridients:
-                "mixture of thick yogurt, cool cucumber, dried mint and garlic.",
               price: "£5.90",
               vegetarian: true,
               vegIcon: `${vegIcon}`,
@@ -1472,11 +1472,6 @@ const restaurant = [
               vegIcon: `${vegIcon}`,
               meatIcon: `${meatIcon}`,
             },
-          ],
-        },
-        warm: {
-          title: "warm starters",
-          dishes: [
             {
               name: "grilled halloumi & lounza",
               ingridients: "cypriot cheese and smoked fillet or pork.",
@@ -1541,391 +1536,414 @@ const restaurant = [
             },
           ],
         },
-      },
-      salads: {
-        title: "Shef's special fresh salads",
-        dishes: [
-          {
-            name: "greek salad",
-            ingridients:
-              "mixed green salad with tomatoes, cucumber, feta cheese, onions, olives and olive oil",
-            price: "£9.50",
-            vegetarian: true,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "grilled lounza & halloumi salad",
-            ingridients:
-              "grilled lounza & halloumi, mixed green salad, tomatoes, cucumber, olives and olive oil",
-            price: "£9.50",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-        ],
-      },
-      mainCourse: {
-        title: "Main Courses",
-        dishes: [
-          {
-            name: "pork souvlaki *",
-            image: `${mealImage}`,
-            ingridients: "pork cubes charcoal grilled to tender perfection.",
-            price: "£12.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "chicken souvlaki *",
-            image: `${mealImage}`,
-            ingridients:
-              "charcoal grilled cubes of chicken, marinated in herbs.",
-            price: "£12.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "blue island chicken souvlaki *",
-            image: `${mealImage}`,
-            ingridients:
-              "pieces of chicken, charcoal grilled to tender perfection.",
-            price: "£13.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "mixed souvlaki *",
-            image: `${mealImage}`,
-            ingridients:
-              "cubes of pork and chicken souvla, charcoal grilled to tender perfection.",
-            price: "£14.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "mousakka *",
-            image: `${mealImage}`,
-            ingridients:
-              "layers of aubergine, potatoes and mince with cheese topping.",
-            price: "£12.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "kleftiko *",
-            image: `${mealImage}`,
-            ingridients: "lamb covered in foil and slowly cooked in oven.",
-            price: "£16.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "dolmades *",
-            image: `${mealImage}`,
-            ingridients:
-              "stuffed vine leaves with pork mince, rice, tomatoes, onions, parsley and mint",
-            price: "£12.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "meat balls",
-            image: `${mealImage}`,
-            ingridients:
-              "lightly spiced meatballs in tomato and pepper sauce. Served with rice and Greek salad.",
-            price: "£11.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "stifado",
-            image: `${mealImage}`,
-            ingridients:
-              "cubes of beef slowly cooked with onions, tomatoes, red wine and herbs served with rice.",
-            vegetarian: false,
-            price: "£16.00",
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-        ],
-      },
-      lunch: {
-        title: "Lunch time menu",
-        avaibality: "Available Monday - Saturday, from 11:30 to 15:00",
-        dishes: [
-          {
-            title: "panini",
-            info: "toasted panini sandwiches. All served with chips",
-            meals: [
-              {
-                name: "chicken",
-                vegetarian: false,
-                price: "£7.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "cheese & ham",
-                vegetarian: false,
-                price: "£6.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "lounza & halloumi",
-                vegetarian: false,
-                price: "£7.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-            ],
-          },
-          {
-            title: "omelettes",
-            info: "All served with chips & salad",
-            meals: [
-              {
-                name: "mushrooms",
-                vegetarian: true,
-                price: "£8.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "chicken",
-                vegetarian: false,
-                price: "£9.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "ham",
-                vegetarian: false,
-                price: "£8.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "cheese",
-                vegetarian: true,
-                price: "£8.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "spanish",
-                vegetarian: false,
-                price: "£10.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-            ],
-          },
-          {
-            title: "grills",
-            grillsInfo: "All served with chips & salad",
-            meals: [
-              {
-                name: "Pork Chop",
-                vegetarian: false,
-                price: "£8.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "Chicken Mediterranean",
-                vegetarian: false,
-                price: "£9.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-              {
-                name: "Grilled fresh chicken",
-                vegetarian: false,
-                price: "£8.90",
-                vegIcon: `${vegIcon}`,
-                meatIcon: `${meatIcon}`,
-              },
-            ],
-          },
-        ],
-      },
-      specialOffer: {
-        title: "Special Offer",
-        dishes: {
-          name: "blue island special meze",
-          info:
-            "Served to a minimum of two people. Traditional speciality of approximately twelve to fifteen traditional greek cold and hot dishes",
-          price: "£20 per person",
-        },
-      },
-      sweets: {
-        title: "Sweets",
-        dishes: [
-          {
-            name: "ice cream",
-            ingridients: "vanilla and chocolate",
-            price: "£6.00",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "chocolate pudding",
-            price: "£7.90",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-          {
-            name: "homemade baklava",
-            price: "£6.90",
-            vegetarian: false,
-            vegIcon: `${vegIcon}`,
-            meatIcon: `${meatIcon}`,
-          },
-        ],
-      },
-      drinks: {
-        title: "drinks menu",
-        drinks: [
-          {
-            title: "red wine",
-            drink: [
-              {
-                name: "merlot",
-                info:
-                  "It has a full bodied taste with slightly bitter aftertaste. this wine generally accompanies mail courses. 12% vol.",
-                price: "£16",
-              },
-              {
-                name: "cabernet",
-                info:
-                  "Dry, full boodied wine with a flavour of herbs. Ideal for both red and white meat. 12vol.",
-                price: "£15",
-              },
-            ],
-          },
-          {
-            title: "rose wine",
-            drink: {
-              name: "rose",
-              info:
-                "Fresh and slightly fruity perfume whilst the flavour is dry and light. 12% vol.",
-              price: "£16",
+      ],
+
+      salads: [
+        {
+          title: "Shef's special fresh salads",
+          dishes: [
+            {
+              name: "greek salad",
+              ingridients:
+                "mixed green salad with tomatoes, cucumber, feta cheese, onions, olives and olive oil",
+              price: "£9.50",
+              vegetarian: true,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
             },
+            {
+              name: "grilled lounza & halloumi salad",
+              ingridients:
+                "grilled lounza & halloumi, mixed green salad, tomatoes, cucumber, olives and olive oil",
+              price: "£9.50",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+          ],
+        },
+      ],
+      mainCourse: [
+        {
+          title: "Main Courses",
+          dishes: [
+            {
+              name: "pork souvlaki *",
+              image: `${mealImage}`,
+              ingridients: "pork cubes charcoal grilled to tender perfection.",
+              price: "£12.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "chicken souvlaki *",
+              image: `${mealImage}`,
+              ingridients:
+                "charcoal grilled cubes of chicken, marinated in herbs.",
+              price: "£12.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "blue island chicken souvlaki *",
+              image: `${mealImage}`,
+              ingridients:
+                "pieces of chicken, charcoal grilled to tender perfection.",
+              price: "£13.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "mixed souvlaki *",
+              image: `${mealImage}`,
+              ingridients:
+                "cubes of pork and chicken souvla, charcoal grilled to tender perfection.",
+              price: "£14.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "mousakka *",
+              image: `${mealImage}`,
+              ingridients:
+                "layers of aubergine, potatoes and mince with cheese topping.",
+              price: "£12.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "kleftiko *",
+              image: `${mealImage}`,
+              ingridients: "lamb covered in foil and slowly cooked in oven.",
+              price: "£16.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "dolmades *",
+              image: `${mealImage}`,
+              ingridients:
+                "stuffed vine leaves with pork mince, rice, tomatoes, onions, parsley and mint",
+              price: "£12.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "meat balls",
+              image: `${mealImage}`,
+              ingridients:
+                "lightly spiced meatballs in tomato and pepper sauce. Served with rice and Greek salad.",
+              price: "£11.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "stifado",
+              image: `${mealImage}`,
+              ingridients:
+                "cubes of beef slowly cooked with onions, tomatoes, red wine and herbs served with rice.",
+              vegetarian: false,
+              price: "£16.00",
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+          ],
+        },
+      ],
+      lunch: [
+        {
+          title: "Lunch",
+          avaibality: "Available Monday - Saturday, from 11:30 to 15:00",
+          dishes: [
+            {
+              title: "panini",
+              meals: [
+                {
+                  name: "chicken",
+                  vegetarian: false,
+                  price: "£7.90",
+                  info: "Toasted panini sandwiches. Served with chips",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "cheese & ham",
+                  vegetarian: false,
+                  price: "£6.90",
+                  info: "Toasted panini sandwiches. Served with chips",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "lounza & halloumi",
+                  vegetarian: false,
+                  price: "£7.90",
+                  info: "Toasted panini sandwiches. Served with chips",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+              ],
+            },
+            {
+              title: "omelettes",
+              meals: [
+                {
+                  name: "mushrooms",
+                  vegetarian: true,
+                  price: "£8.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "chicken",
+                  vegetarian: false,
+                  price: "£9.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "ham",
+                  vegetarian: false,
+                  price: "£8.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "cheese",
+                  vegetarian: true,
+                  price: "£8.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "spanish",
+                  vegetarian: false,
+                  price: "£10.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+              ],
+            },
+            {
+              title: "grills",
+              meals: [
+                {
+                  name: "Pork Chop",
+                  vegetarian: false,
+                  price: "£8.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "Chicken Mediterranean",
+                  vegetarian: false,
+                  price: "£9.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+                {
+                  name: "Grilled fresh chicken",
+                  vegetarian: false,
+                  price: "£8.90",
+                  info: "Served with chips & salad",
+                  vegIcon: `${vegIcon}`,
+                  meatIcon: `${meatIcon}`,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      specialOffer: [
+        {
+          title: "Special Offer",
+          dishes: {
+            name: "blue island special meze",
+            info:
+              "Served to a minimum of two people. Traditional speciality of approximately twelve to fifteen traditional greek cold and hot dishes",
+            price: "£20 per person",
           },
-          {
-            title: "white wine",
-            drink: [
-              {
-                name: "pinot grigio",
-                info:
-                  "Dry, relatively rounded and pleasent, well balanced in acidity. 12% vol.",
-                price: "£16",
-              },
-              {
-                name: "chardonnay",
-                info:
-                  "A ripe fruity wine, carefully matched with well-ballanced oak. Soft and buttery with peach fruit flavours. 12% vol.",
-                price: "£16",
-              },
-            ],
-          },
-          {
-            title: "spirits (25 ml)",
-            drink: [
-              {
-                name: "Vodka / Whisky / Brandy / Tequila / Ouzo",
-                price: "£4.00",
-              },
-              {
-                name: "Spirits with soft drinks",
-                price: "£4.50",
-              },
-              {
-                name: "Gin and Tonic",
-                price: "£4.50",
-              },
-              {
-                name: "Bottled beer",
-                price: "£4.50",
-              },
-              {
-                name: "Wine by glass (175ml)",
-                price: "£4.50",
-              },
-            ],
-          },
-          {
-            title: "soft drinks",
-            drink: [
-              {
-                name: "Coke",
-                price: "£3.00",
-              },
-              {
-                name: "Lemonade",
-                price: "£3.00",
-              },
-              {
-                name: "Orange juice",
-                price: "£3.50",
-              },
-              {
-                name: "Apple juice",
-                price: "£3.50",
-              },
-              {
-                name: "Cranberry juice",
-                price: "£3.50",
-              },
-            ],
-          },
-          {
-            title: "hot drinks",
-            drink: [
-              {
-                name: "Cafe Creme (black)",
-                price: "£3.00",
-              },
-              {
-                name: "Americano (black)",
-                price: "£3.00",
-              },
-              {
-                name: "Espresso",
-                price: "£2.00",
-              },
-              {
-                name: "Capuccino",
-                price: "£3.00",
-              },
-              {
-                name: "Cafe au Lait",
-                price: "£3.00",
-              },
-              {
-                name: "Greek Coffee",
-                price: "£3.00",
-              },
-              {
-                name: "Tea",
-                price: "£1.00",
-              },
-            ],
-          },
-        ],
-      },
+        },
+      ],
+      sweets: [
+        {
+          title: "Sweets",
+          dishes: [
+            {
+              name: "ice cream",
+              ingridients: "vanilla and chocolate",
+              price: "£6.00",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "chocolate pudding",
+              price: "£7.90",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+            {
+              name: "homemade baklava",
+              price: "£6.90",
+              vegetarian: false,
+              vegIcon: `${vegIcon}`,
+              meatIcon: `${meatIcon}`,
+            },
+          ],
+        },
+      ],
+      drinks: [
+        {
+          title: "Drinks menu",
+          drinks: [
+            {
+              title: "red wine",
+              list: [
+                {
+                  name: "merlot",
+                  info:
+                    "It has a full bodied taste with slightly bitter aftertaste. this wine generally accompanies mail courses. 12% vol.",
+                  price: "£16",
+                },
+                {
+                  name: "cabernet",
+                  info:
+                    "Dry, full boodied wine with a flavour of herbs. Ideal for both red and white meat. 12vol.",
+                  price: "£15",
+                },
+              ],
+            },
+            {
+              title: "rose wine",
+              list: [
+                {
+                  name: "rose",
+                  info:
+                    "Fresh and slightly fruity perfume whilst the flavour is dry and light. 12% vol.",
+                  price: "£16",
+                },
+              ],
+            },
+            {
+              title: "white wine",
+              list: [
+                {
+                  name: "pinot grigio",
+                  info:
+                    "Dry, relatively rounded and pleasent, well balanced in acidity. 12% vol.",
+                  price: "£16",
+                },
+                {
+                  name: "chardonnay",
+                  info:
+                    "A ripe fruity wine, carefully matched with well-ballanced oak. Soft and buttery with peach fruit flavours. 12% vol.",
+                  price: "£16",
+                },
+              ],
+            },
+            {
+              title: "spirits (25 ml)",
+              list: [
+                {
+                  name: "Vodka / Whisky / Brandy / Tequila / Ouzo",
+                  price: "£4.00",
+                },
+                {
+                  name: "Spirits with soft drinks",
+                  price: "£4.50",
+                },
+                {
+                  name: "Gin and Tonic",
+                  price: "£4.50",
+                },
+                {
+                  name: "Bottled beer",
+                  price: "£4.50",
+                },
+                {
+                  name: "Wine by glass (175ml)",
+                  price: "£4.50",
+                },
+              ],
+            },
+            {
+              title: "soft drinks",
+              list: [
+                {
+                  name: "Coke",
+                  price: "£3.00",
+                },
+                {
+                  name: "Lemonade",
+                  price: "£3.00",
+                },
+                {
+                  name: "Orange juice",
+                  price: "£3.50",
+                },
+                {
+                  name: "Apple juice",
+                  price: "£3.50",
+                },
+                {
+                  name: "Cranberry juice",
+                  price: "£3.50",
+                },
+              ],
+            },
+            {
+              title: "hot drinks",
+              list: [
+                {
+                  name: "Cafe Creme (black)",
+                  price: "£3.00",
+                },
+                {
+                  name: "Americano (black)",
+                  price: "£3.00",
+                },
+                {
+                  name: "Espresso",
+                  price: "£2.00",
+                },
+                {
+                  name: "Capuccino",
+                  price: "£3.00",
+                },
+                {
+                  name: "Cafe au Lait",
+                  price: "£3.00",
+                },
+                {
+                  name: "Greek Coffee",
+                  price: "£3.00",
+                },
+                {
+                  name: "Tea",
+                  price: "£1.00",
+                },
+              ],
+            },
+          ],
+        },
+      ],
     },
 
     allergenInfo:
