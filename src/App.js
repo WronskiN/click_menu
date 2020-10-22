@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import MainTemplate from "../templates/MainTemplate";
-import RestaurantMenuList from "../components/organisms/RestaurantMenuList/RestaurantMenuList";
-import Home from "./Home";
-import RestaurantPage from "../components/pages/RestaurantPage";
+import MainTemplate from "./templates/MainTemplate";
+import RestaurantMenuList from "./components/organisms/RestaurantMenuList/RestaurantMenuList";
+import Home from "./views/Home";
+import RestaurantPage from "./components/pages/RestaurantPage";
 
 const App = () => {
   return (
