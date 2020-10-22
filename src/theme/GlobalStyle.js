@@ -22,6 +22,14 @@ const GlobalStyle = createGlobalStyle`
         color: ${theme.text};
         background-color: ${theme.primary};
     }
+
+    input::placeholder {
+        color: ${theme.text};
+
+        @media (min-width: 768px) {
+            font-size: ${theme.fontSize.m};
+        }
+    }
 `;
 
 export default GlobalStyle;

@@ -14,14 +14,9 @@ const InputSearch = styled.input`
     -moz-outline-radius: 0.5rem;
   }
 
-  ::placeholder {
-    color: ${({ theme }) => theme.text};
-  }
-
   @media (min-width: 768px) {
     width: 345px;
     height: 60px;
-    font-size: ${({ theme }) => theme.fontSize.m};
   }
 `;
 

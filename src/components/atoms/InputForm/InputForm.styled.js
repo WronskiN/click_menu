@@ -20,12 +20,7 @@ const InputField = styled.input`
   }
 
   &::placeholder {
-    color: ${({ theme }) => theme.text};
     font-weight: ${({ theme }) => theme.bold};
-
-    @media (min-width: 768px) {
-      font-size: ${({ theme }) => theme.fontSize.m};
-    }
   }
 `;
 

@@ -28,7 +28,6 @@ export const Textarea = styled.textarea`
 
     @media (min-width: 768px) {
       padding-top: 4rem;
-      font-size: ${({ theme }) => theme.fontSize.m};
       color: ${({ theme }) => theme.text};
       font-weight: ${({ theme }) => theme.bold};
       font-family: "Poppins", sans-serif;
