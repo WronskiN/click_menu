@@ -7,8 +7,8 @@ import {
   IconLink,
 } from "./Footer.styled";
 import Icon from "../../atoms/Icons/Icon";
-import EmailImage from "../../../assets/email.svg";
-import Facebook from "../../../assets/facebook.svg";
+import EmailImage from "../../../assets/svg/email.svg";
+import Facebook from "../../../assets/svg/facebook.svg";
 
 const Footer = () => {
   return (

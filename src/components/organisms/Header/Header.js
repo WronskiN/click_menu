@@ -8,7 +8,7 @@ import {
   StyledImage,
 } from "./Header.styled";
 import Button from "../../atoms/Button/Button";
-import Image from "../../../assets/phone2.jpg";
+import Image from "../../../assets/jpg/phone2.jpg";
 
 const Header = () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import RestaurantMenu from "./RestaurantMenu";
 import mealImage from "../../assets/restaurant/meal.jpg";
-import vegIcon from "../../assets/vegetarian.svg";
-import meatIcon from "../../assets/meat.svg";
+import vegIcon from "../../assets/svg/vegetarian.svg";
+import meatIcon from "../../assets/svg/meat.svg";
 
 const restaurant = [
   {
