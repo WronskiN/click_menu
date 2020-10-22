@@ -8,11 +8,10 @@ import {
   ItemImage,
   SearchListStatus,
 } from "./RestaurantMenuList.styled";
-import MenuPageTemplate from "../../../templates/MenuPageTemplate";
-import Title from "../../atoms/Title/Title";
-import InputSearch from "../../atoms/InputSearch/InputSearch";
-import Sotonweb from "../../../assets/restaurant/sotonweb.svg";
-import BlueIsland from "../../../assets/restaurant/blueIsland/blueIsland.jpg";
+import Title from "../../components/atoms/Title/Title";
+import InputSearch from "../../components/atoms/InputSearch/InputSearch";
+import Sotonweb from "../../assets/restaurant/sotonweb.svg";
+import BlueIsland from "../../assets/restaurant/blueIsland/blueIsland.jpg";
 
 const RestaurantList = [
   {
@@ -82,7 +81,7 @@ class RestaurantMenuList extends Component {
   render() {
     const restaurants = this.state.restaurantList;
     return (
-      <MenuPageTemplate>
+      <>
         <MenuListWrapper>
           <Title>menu list</Title>
           <InputContainer>
@@ -107,7 +106,7 @@ class RestaurantMenuList extends Component {
             ))}
           </ListContainer>
         </MenuListWrapper>
-      </MenuPageTemplate>
+      </>
     );
   }
 }

@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import MenuPageTemplate from "../../templates/MenuPageTemplate";
 import Title from "../atoms/Title/Title";
 import MenuItem from "../molocules/MenuItem/MenuItem";
 import {
@@ -24,7 +23,7 @@ const RestaurantMenu = ({ restaurant, ...props }) => {
   console.log(currentRestaurant);
 
   return (
-    <MenuPageTemplate>
+    <>
       <MenuItem>
         {currentRestaurant.map((item) => (
           <MenuWrapper key={item.linkName}>
@@ -216,7 +215,7 @@ const RestaurantMenu = ({ restaurant, ...props }) => {
           </MenuWrapper>
         ))}
       </MenuItem>
-    </MenuPageTemplate>
+    </>
   );
 };
 
