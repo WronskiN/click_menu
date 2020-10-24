@@ -27,7 +27,7 @@ export const MealAddress = styled.p`
   margin: 1rem 0;
 `;
 
-export const MenuContainer = styled.section`
+export const MenuInnerContainer = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;

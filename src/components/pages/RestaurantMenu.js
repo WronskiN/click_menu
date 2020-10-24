@@ -4,7 +4,7 @@ import MenuItem from "../molocules/MenuItem/MenuItem";
 import {
   MenuWrapper,
   MealTitle,
-  MenuContainer,
+  MenuInnerContainer,
   MealBox,
   MealIngridients,
   MealPrice,
@@ -36,7 +36,7 @@ const RestaurantMenu = ({ restaurant, ...props }) => {
             </MealAddress>
             {item.menu.breakfast &&
               item.menu.breakfast.map((name) => (
-                <MenuContainer key={name.title}>
+                <MenuInnerContainer key={name.title}>
                   <MealTitle>{name.title}</MealTitle>
                   <MealAvaibality>{name.avaibality}</MealAvaibality>
                   {name.dishes.map((dish) => (
@@ -57,11 +57,11 @@ const RestaurantMenu = ({ restaurant, ...props }) => {
                       <MealPrice>{dish.price}</MealPrice>
                     </MealBox>
                   ))}
-                </MenuContainer>
+                </MenuInnerContainer>
               ))}
             {item.menu.starters &&
               item.menu.starters.map((name) => (
-                <MenuContainer key={name.title}>
+                <MenuInnerContainer key={name.title}>
                   <MealTitle>{name.title}</MealTitle>
                   <MealAvaibality>{name.avaibality}</MealAvaibality>
                   {name.dishes.map((dish) => (
@@ -82,11 +82,11 @@ const RestaurantMenu = ({ restaurant, ...props }) => {
                       <MealPrice>{dish.price}</MealPrice>
                     </MealBox>
                   ))}
-                </MenuContainer>
+                </MenuInnerContainer>
               ))}
             {item.menu.salads &&
               item.menu.salads.map((name) => (
-                <MenuContainer key={name.title}>
+                <MenuInnerContainer key={name.title}>
                   <MealTitle>{name.title}</MealTitle>
                   <MealAvaibality>{name.avaibality}</MealAvaibality>
                   {name.dishes.map((dish) => (
@@ -107,11 +107,11 @@ const RestaurantMenu = ({ restaurant, ...props }) => {
                       <MealPrice>{dish.price}</MealPrice>
                     </MealBox>
                   ))}
-                </MenuContainer>
+                </MenuInnerContainer>
               ))}
             {item.menu.mainCourse &&
               item.menu.mainCourse.map((name) => (
-                <MenuContainer key={name.title}>
+                <MenuInnerContainer key={name.title}>
                   <MealTitle>{name.title}</MealTitle>
                   <MealAvaibality>{name.avaibality}</MealAvaibality>
                   {name.dishes.map((dish) => (
@@ -132,11 +132,11 @@ const RestaurantMenu = ({ restaurant, ...props }) => {
                       <MealPrice>{dish.price}</MealPrice>
                     </MealBox>
                   ))}
-                </MenuContainer>
+                </MenuInnerContainer>
               ))}
             {item.menu.lunch &&
               item.menu.lunch.map((name) => (
-                <MenuContainer key={name.title}>
+                <MenuInnerContainer key={name.title}>
                   <MealTitle>{name.title}</MealTitle>
                   <MealAvaibality>{name.avaibality}</MealAvaibality>
                   {name.dishes.map((dish) => (
@@ -162,11 +162,11 @@ const RestaurantMenu = ({ restaurant, ...props }) => {
                       ))}
                     </Fragment>
                   ))}
-                </MenuContainer>
+                </MenuInnerContainer>
               ))}
             {item.menu.sweet &&
               item.menu.sweet.map((name) => (
-                <MenuContainer key={name.title}>
+                <MenuInnerContainer key={name.title}>
                   <MealTitle>{name.title}</MealTitle>
                   <MealAvaibality>{name.avaibality}</MealAvaibality>
                   {name.dishes.map((dish) => (
@@ -187,11 +187,11 @@ const RestaurantMenu = ({ restaurant, ...props }) => {
                       <MealPrice>{dish.price}</MealPrice>
                     </MealBox>
                   ))}
-                </MenuContainer>
+                </MenuInnerContainer>
               ))}
             {item.menu.drinks &&
               item.menu.drinks.map((name) => (
-                <MenuContainer key={name.title}>
+                <MenuInnerContainer key={name.title}>
                   <MealTitle>{name.title}</MealTitle>
                   {name.avaibality && (
                     <MealAvaibality>{name.avaibality}</MealAvaibality>
@@ -210,7 +210,7 @@ const RestaurantMenu = ({ restaurant, ...props }) => {
                       ))}
                     </Fragment>
                   ))}
-                </MenuContainer>
+                </MenuInnerContainer>
               ))}
           </MenuWrapper>
         ))}
